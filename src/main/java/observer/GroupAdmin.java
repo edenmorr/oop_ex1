@@ -39,7 +39,7 @@ public class GroupAdmin implements Sender {
     @Override
     public void insert(int offset, String obj) {
         this.o.insert(offset, obj);
-        notifyObservers();
+//        notifyObservers();
     }
     /**
      *
@@ -48,7 +48,7 @@ public class GroupAdmin implements Sender {
     @Override
     public void append(String obj) {
     this.o.append(obj);
-        notifyObservers();
+//        notifyObservers();
     }
 
     /**
@@ -60,11 +60,12 @@ public class GroupAdmin implements Sender {
     public void delete(int start, int end) {
     this.o.delete(start, end);
     }
-    private void notifyObservers() {
-        for (Member obj : this.members) {
-            obj.update(o);
-        }
-    }
+
+//    private void notifyObservers() {
+//        for (Member obj : this.members) {
+//            obj.update(o);
+//        }
+//    }
     /**
      * Erases the last change done to the document, reverting
      *     it to an older state.
