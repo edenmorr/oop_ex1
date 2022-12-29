@@ -13,12 +13,17 @@ public class GroupAdmin implements Sender {
     }
     /**
      *
-     * @param obj is add to members and a member is register
+     * @param obj subscribe
      */
     @Override
     public void register(Member obj) {
         this.members.add(obj);
     }
+
+    /**
+     *
+     * @param obj unsubscribe
+     */
     @Override
     public void unregister(Member obj) {
         this.members.remove(obj);
@@ -33,13 +38,13 @@ public class GroupAdmin implements Sender {
 
     /**
      *
-     * @param obj Inserts the string into this character sequence.
+     * @param obj Inserts the string into
      * @param offset this character sequence.
      */
     @Override
     public void insert(int offset, String obj) {
         this.o.insert(offset, obj);
-//        notifyObservers();
+        notifyObservers();
     }
     /**
      *
@@ -48,7 +53,7 @@ public class GroupAdmin implements Sender {
     @Override
     public void append(String obj) {
     this.o.append(obj);
-//        notifyObservers();
+        notifyObservers();
     }
 
     /**
@@ -61,11 +66,11 @@ public class GroupAdmin implements Sender {
     this.o.delete(start, end);
     }
 
-//    private void notifyObservers() {
-//        for (Member obj : this.members) {
-//            obj.update(o);
-//        }
-//    }
+    private void notifyObservers() {
+        for (Member obj : this.members) {
+            obj.update(o);
+        }
+    }
     /**
      * Erases the last change done to the document, reverting
      *     it to an older state.
