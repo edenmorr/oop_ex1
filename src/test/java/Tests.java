@@ -52,7 +52,6 @@ public class Tests {
         assertEquals("hi how are you",memberNum1.o.toString());
         logger.info(()->"the memory after undo:");
         logger.info(()->JvmUtilities.objectTotalSize(memberNum1));
-
     }
     }
 

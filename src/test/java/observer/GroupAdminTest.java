@@ -29,7 +29,6 @@ class GroupAdminTest {
         group.unregister(memberNum2);
         assertEquals(0,group.members.size());
     }
-
     @Test
     void insert() {
      group = new GroupAdmin();
@@ -81,7 +80,6 @@ class GroupAdminTest {
         assertEquals(memberNum1.o.toString(), "ing");
         assertEquals(memberNum1.o.toString(), "ing");
     }
-
     @Test
     void undo() {
         group = new GroupAdmin();
