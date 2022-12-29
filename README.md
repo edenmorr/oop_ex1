@@ -29,4 +29,12 @@ the class has a member that is reciving massegeses frome the class groupadmin
 This class implementes update method that whenever the update method is called, the ConcreteMember class updates its internal copy of the UndoableStringBuilder object with the current state of the shared UndoableStringBuilder. 
 
 # part 2
+In this part we were asked to check the size of the object in the heap. We found out that one of the parameters for checking the efficiency of the code is the size of the object in the JVM memory. 
 
+there are 3 methods that we were given to used to test the efficiency.
+
+The method objectFootprint - shows all the references that the object contains the size of each reference (including overhead)
+
+The method objectTotalSize - displays the total size of the object. This method is the most relevant to us in this assignment.
+
+The jvmInfo method – displays the process ID of the JVM and the total amount of memory for the benefit of the program.
