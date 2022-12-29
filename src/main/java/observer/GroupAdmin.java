@@ -55,7 +55,6 @@ public class GroupAdmin implements Sender {
     this.o.append(obj);
         notifyObservers();
     }
-
     /**
      *
      * @param start Removes the characters in a substring of this sequence.

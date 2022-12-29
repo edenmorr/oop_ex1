@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class GroupAdminTest {
         GroupAdmin group;
         ConcreteMember memberNum1, memberNum2;
+
     @Test
     void register() {
      group = new GroupAdmin();
