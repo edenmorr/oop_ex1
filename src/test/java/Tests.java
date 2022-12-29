@@ -6,7 +6,6 @@ import org.junit.platform.commons.logging.LoggerFactory;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
 public class Tests {
     public static final Logger logger = LoggerFactory.getLogger(Tests.class);
     // stub method to check external dependencies compatibility

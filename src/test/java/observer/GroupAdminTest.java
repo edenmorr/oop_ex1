@@ -63,7 +63,6 @@ class GroupAdminTest {
         assertEquals(memberNum1.o.toString(), "we were on a break");
         assertEquals(memberNum2.o.toString(), "we were on a break");
     }
-
     @Test
     void Delete() {
         group = new GroupAdmin();
