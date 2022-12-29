@@ -9,6 +9,7 @@ observer pattern In software design and engineering, is a software design patter
 ## GroupAdmin class that implements from the Sender interface
 in this class we had to implement thos methods:
 ```java
+package observer;
 register- subscribe 
 unregister- unsubscriber 
 # append & insert strings to the UndoableStringBuilder object
@@ -23,7 +24,8 @@ The GroupAdmin class automatically notifyObserver (because of the shallow copy) 
 
 
 ## ConcreteMember that implement from the Member interface 
-
+the class has a member that is reciving massegeses frome the class groupadmin 
+This class implementes update method that whenever the update method is called, the ConcreteMember class updates its internal copy of the UndoableStringBuilder object with the current state of the shared UndoableStringBuilder. 
 
 
 
