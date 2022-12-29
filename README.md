@@ -6,9 +6,23 @@ observer pattern In software design and engineering, is a software design patter
 
 **in this assignment we needed to implemente the observer design pattern using the following classes:**
 
-# GroupAdmin class that implements from Sender
+## GroupAdmin class that implements from the Sender interface
+in this class we had to implement thos methods:
+```java
+register- subscribe 
+unregister- unsubscriber 
+# append & insert strings to the UndoableStringBuilder object
+public void insert
+public void append 
+# strings from the UndoableStringBuilder
+public void Delete
+# previous actions on the UndoableStringBuilder.
+public void undo
+```
+The GroupAdmin class automatically notifyObserver (because of the shallow copy) whenever there is a change to the UndoableStringBuilder.
 
-# ConcreteMember that implement from Member
+
+## ConcreteMember that implement from the Member interface 
 
 
 
