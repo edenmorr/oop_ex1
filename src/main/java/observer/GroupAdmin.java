@@ -63,6 +63,7 @@ public class GroupAdmin implements Sender {
     @Override
     public void delete(int start, int end) {
     this.o.delete(start, end);
+        notifyObservers();
     }
 
     private void notifyObservers() {

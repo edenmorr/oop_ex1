@@ -79,6 +79,7 @@ class GroupAdminTest {
         group.delete(0, 3);
         assertEquals(memberNum1.o.toString(), "ing");
         assertEquals(memberNum1.o.toString(), "ing");
+
     }
     @Test
     void undo() {

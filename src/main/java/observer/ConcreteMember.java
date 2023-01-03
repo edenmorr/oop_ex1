@@ -6,7 +6,7 @@ public class ConcreteMember implements Member{
     public UndoableStringBuilder o;
 
     public ConcreteMember() {
-         this.o = new UndoableStringBuilder();
+         this.o = null;
     }
     /**
      * Updates the member with the latest state of the shared UndoableStringBuilder object.

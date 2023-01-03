@@ -20,5 +20,6 @@ class ConcreteMemberTest {
         group.unregister(memberNum1);
         group.unregister(memberNum2);
         assertTrue(group.members.isEmpty());
+
     }
 }
