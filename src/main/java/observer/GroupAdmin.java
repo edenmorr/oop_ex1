@@ -66,7 +66,7 @@ public class GroupAdmin implements Sender {
         notifyObservers();
     }
 
-    private void notifyObservers() {
+    public void notifyObservers() {
         for (Member obj : this.members) {
             obj.update(o);
         }
